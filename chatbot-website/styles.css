@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Roboto Thin', sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-box {
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 20px; /* Add padding for spacing */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  width: 300px;
+}
+
+.horizontal-line {
+  border-top: 1px dotted #000;
+  margin: 35px 0;
+}
+
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chat-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Add a smooth transform effect */
+}
+
+.chat-content {
+  border-top: 1px solid black;
+  padding: 10px 0;
+}
+
+.dropdown {
+  display: none;
+  margin-top: 10px;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.question-dropdown {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.question-dropdown:hover {
+  border-color: #666; /* Darken the border color on hover */
+}
+
+.dropdown-button:hover {
+  transform: scale(1.05);
+}
+

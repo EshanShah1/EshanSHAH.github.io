@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @font-face {
+      font-family: 'Roboto Thin';
+      src: url('Roboto-Thin.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+  <title>Chat Bot</title>
+</head>
+
+  <title>Chat Bot</title>
+</head>
+<body>
+  <div class="horizontal-line"></div>
+  <div class="chat-container">
+    <div class="chat-box">
+      <div class="chat-header">
+        <div class="chat-title">Chat Bot</div>
+        <button id="dropdown-btn" class="dropdown-button" onclick="toggleDropdown()">▼</button>
+      </div>
+      <div id="chat-content" class="chat-content">What would you like to know?</div>
+      <div id="dropdown" class="dropdown">
+        <button id="close-dropdown-btn" class="dropdown-button" onclick="toggleDropdown()">▲</button>
+        <select id="question-dropdown" class="question-dropdown" onchange="displayAnswer()">
+          <option value="default">Select a question</option>
+          <option value="q1">What are your operating hours?</option>
+          <option value="q2">Where are you located?</option>
+          <option value="q3">What stores and brands are available?</option>
+          <option value="q4">Is there parking available?</option>
+          <option value="q5">Are there any ongoing promotions or events?</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
